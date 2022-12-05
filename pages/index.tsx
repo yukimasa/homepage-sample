@@ -1,12 +1,7 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import Link from "next/link";
 import { microcmsClient } from "../libs/client";
-
-type Post = {
-  id: string;
-  title: string;
-  content: string;
-};
+import { Post } from "../types/post";
 
 type DataType = {
   contents: Post[];
